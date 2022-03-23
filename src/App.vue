@@ -1,10 +1,10 @@
 <template>
 
-<div class="flex flex-col items-center">
+<div class="flex flex-col gap-4 items-center">
 <div class="text-indigo-500 font-extrabold text-xl mt-10">Counter</div>
 
 <!-- <HelloWorld /> -->
-<input type="number" v-model.number="max1" class="border" />
+<input type="number" v-model.number="max1" class="border text-center" />
 <Counter :max= "max1"/>
 <Counter :max= "10"/>
 <Counter :max= "20"/>
