@@ -2,8 +2,8 @@
 <div class="bg-gray-100 w-screen flex flex-col items-center rounded p-2">
   <div>The count is: <span :class="{'text-red-500' :count === max, 'text-orange-300' :count >= max-3 && count < max, 'text-green-500' :count < max-3}"> {{ count }} </span></div>
   <div class="flex">
-   <button class="border bg-white px-4 py-2 rounded" :class="{'text-gray-300' : count === 0}" :disabled= "count === 0" @click="decrease">-1</button>
-  <button class="border bg-white px-4 py-2 rounded" :class="{'text-gray-300' : count === max}" :disabled= "count === max" @click="increase">+1</button>
+   <button class="border bg-white px-4 py-2 rounded" :class="{'text-indigo-500/30' : count === 0, 'text-indigo-500' :count !== 0}" :disabled= "count === 0" @click="decrease">-1</button>
+  <button class="border bg-white px-4 py-2 rounded" :class="{'text-indigo-500/30' : count === max, 'text-indigo-500' :count !== max}" :disabled= "count === max" @click="increase">+1</button>
   </div>
   </div>
 </template>
