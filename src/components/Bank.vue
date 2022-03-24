@@ -29,7 +29,6 @@
 export default {
   data() {
     return {
-      outcome: -20,
       name: "",
       amount: 0,
       items: [],
